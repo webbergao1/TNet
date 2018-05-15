@@ -1,4 +1,19 @@
 # docker-compose file
+#
+# This file used to start nodes and monitor API from docker images.
+# Monitor API used to get and send node's infomations to another server.
+# Each node corresponds to an monitor API.
+#
+# Node 
+#     - volumes: Puts configuration files to the local folder and corresponds to a container folder
+#                The configuration file used by command 'start -c' likes 'node start -c /go-seele/config/node1.json'
+#                There has some files in 'node_config' folder
+#     - command: Start the node with an configuration file.
+#
+# monitor-api
+#     - volumes: The configuration file in the container named 'app.conf' and must be put in /monitor-api
+#                There has some files in 'monitor_api_config' folder
+#     - RPCURL:  In 'app.conf', the address is set to the node's ipv4_address which you wants to link to.
 
 version: '2'
 
@@ -7,11 +22,12 @@ services:
     image: webbergao/go-seele:latest
     # this node used to response rpc calls through those prots
     ports: 
-      - "25256:55027" # rpc
-      - "25257:65027" # http
-      - "25258:39007" # p2p
+      - "55027:55027" # rpc
+      - "65027:65027" # http
+      - "39007:39007" # p2p
     # external config file from this valume
     volumes:
+      # !! change '/Volumes/work/go/src/github.com/seeleteam/TNet/docker-compose/node_config' to your local path
       - /Volumes/work/go/src/github.com/seeleteam/TNet/docker-compose/node_config:/go-seele/config:ro
     # start node with config file
     command:
@@ -21,6 +37,7 @@ services:
     image: webbergao/monitor-api:latest
     # external config file from this valume
     volumes:
+      # !! change '/Volumes/work/go/src/github.com/seeleteam/TNet/docker-compose/monitor_api_config/app1.conf' to your local path
       - /Volumes/work/go/src/github.com/seeleteam/TNet/docker-compose/monitor_api_config/app1.conf:/monitor-api/app.conf:ro
     depends_on:
       - node1

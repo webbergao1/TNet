@@ -15,7 +15,7 @@
 | ----------- | --------- |
 | Name  | 节点名字  |
 |  StaticNodes  | 静态节点地址，请填写我们提供的测试节点<s>**`XXX`**</s>  |
-|  RPCAddr  | 端口默认**`55027`**，monitor监控服务使用，如更改需在monitor相应配置文件修改连接端口 |
+|  RPCAddr  | 端口默认`55027`，monitor监控服务使用，如更改需在monitor相应配置文件修改连接端口 |
 |  NetworkID  | 网络ID，填写 **`1`**  |
 
 ### 配置monitor-api镜像
