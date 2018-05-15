@@ -4,8 +4,8 @@ Connect to the seele test network .
 Startup the node and connected to the seele test network, then startup the monitor service. You can see the node infos on the monitor page: https://xx.xx.com.
 ### We offer three ways.
 - [building the source](https://github.com/webbergao1/TNet/blob/master/BuildingSource%5Ben%5D.md)
-- [download the executable  file]()
-- [from the docker image]()
+- [download the executable  file](https://github.com/webbergao1/TNet/blob/master/DownloadExec%5Ben%5D.md)
+- [from the docker image](https://github.com/webbergao1/TNet/blob/master/FromDocker%5Ben%5D.md)
 
 ## 
 seele测试网络接入。
@@ -13,5 +13,5 @@ seele测试网络接入。
 
 ### 我们提供三种方式接入测试网
 - [通过源码编译生成可执行文件](https://github.com/webbergao1/TNet/blob/master/BuildingSource%5Bcn%5D.md)
-- [通过下载可执行文件]()
-- [通过docker下载镜像]()
+- [通过下载可执行文件](https://github.com/webbergao1/TNet/blob/master/DownloadExec%5Bcn%5D.md)
+- [通过docker下载镜像](https://github.com/webbergao1/TNet/blob/master/FromDocker%5Bcn%5D.md)
