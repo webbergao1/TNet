@@ -1,8 +1,8 @@
 # TNet
 
-Connect to the seele test network .
-Startup the node and connected to the seele test network, then startup the monitor service. You can see the node infos on the monitor page: https://xx.xx.com.
-### We offer three ways.
+Connect to the seele test net .<br>
+Startup the node and connected to the seele test net, then startup the monitor service. You can browsing the node infos on the monitor page: https://xx.xx.com.
+### We provide three ways to connect the test net.
 - [building the source](https://github.com/webbergao1/TNet/blob/master/BuildingSource%5Ben%5D.md)
 - [download the executable  file](https://github.com/webbergao1/TNet/blob/master/DownloadExec%5Ben%5D.md)
 - [from the docker image](https://github.com/webbergao1/TNet/blob/master/FromDocker%5Ben%5D.md)
