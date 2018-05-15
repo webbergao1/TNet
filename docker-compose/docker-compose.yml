@@ -1,0 +1,28 @@
+# docker-compose file
+
+version: '2'
+
+services:
+  node1:
+    image: webbergao/go-seele:latest
+    # this node used to response rpc calls through those prots
+    ports: 
+      - "25256:55027" # rpc
+      - "25257:65027" # http
+      - "25258:39007" # p2p
+    # external config file from this valume
+    volumes:
+      - /Volumes/work/go/src/github.com/seeleteam/TNet/docker-compose/node_config:/go-seele/config:ro
+    # start node with config file
+    command:
+      node start -c /go-seele/config/nodeconfig.json
+
+  monitor-api-1:
+    image: webbergao/monitor-api:latest
+    # external config file from this valume
+    volumes:
+      - /Volumes/work/go/src/github.com/seeleteam/TNet/docker-compose/monitor_api_config/app1.conf:/monitor-api/app.conf:ro
+    depends_on:
+      - node1
+
+
