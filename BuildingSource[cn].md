@@ -33,6 +33,6 @@
 | 配置项 | 说明 |
 | ----------- | --------- |
 | app_name  | 节点名字，在监控浏览器中显示  |
-| RPCURL  | 连接节点的地址，端口填写 `nodeConfig.json`中的 `RPCAddr`，默认55027
+| RPCURL  | 本节点的IP地址，端口填写 `nodeConfig.json`中`RPCAddr`监听的地址，默认55027
 
 
