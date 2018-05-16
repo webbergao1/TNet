@@ -1,14 +1,16 @@
 
 ## 通过下载可执行文件
 
-### ubuntu & mac
-#### 环境
+### 环境
 	网络: 独立IP地址
 	防火墙: 开放39007、55027端口，分别用于p2p连接和rpc服务
 
 ### 下载可执行文件
+#### ubuntu & mac
 下载go-seele可执行文件: <s>https://github.com/seeleteam/go-seele/XXX</s>
 可通过wget命令下载 <s>`wget https://github.com/seeleteam/go-seele/XXX`</s>
+#### windows
+下载go-seele可执行文件: <s>https://github.com/seeleteam/go-seele/XXX</s>
 
 ### 配置
 下载本工程里的 `config/nodeConfig.json`, json格式的配置文件，拷贝到可执行文件同一文件夹，并配置关键信息
@@ -21,8 +23,9 @@
 |  NetworkID  | 网络ID，填写 **`1`**  |
 
 ### 启动节点
-执行 `node start -c <configfile>`
-例如`./node start -c nodeConfig.json`
+进入`build`文件夹执行 `node start -c <configfile>` <br>
+ubuntu & mac `./node start -c nodeConfig.json`
+windows `node.exe start -c nodeConfig.json` <br>
 
 ### 启动监控服务
 - 下载监控服务可执行文件，地址 <s> https://xx.xx.com/13456 </s>，可通过wget命令下载
@@ -34,6 +37,3 @@
 | ----------- | --------- |
 | app_name  | 节点名字，在监控浏览器中显示  |
 | RPCURL  | 连接节点的地址，端口填写 `nodeConfig.json`中的 `RPCAddr`，默认55027
-
-
-
