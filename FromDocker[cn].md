@@ -45,4 +45,4 @@
 | volumes  | 挂载本地`docker-compose/monitor-api-config/app1.conf`文件到镜像的/monitor-api/app.conf文件  |
 
 ### 启动Docker镜像
-`run docker-compose run`
+`docker-compose run`
