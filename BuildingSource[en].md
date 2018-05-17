@@ -1,34 +1,40 @@
-# Download executable file
+@@ -1 +1,105 @@
+## Building the source
+# Download source code and compile
+```
+Git clone https://github.com/seeleteam/go-seele
+```
 
 ## Environment
 - **ubunto & mac**  
+*Compile*: go development environment  
 *Network*: Standalone IP address  
 *Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively  
 - **windows**  
 *Compile*: go development environment, gcc tool (http://tdm-gcc.tdragon.net/download)  
 *Network*: Standalone IP address  
-*Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively  
+*Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively   
 
-## Download（TODO）
-- **ubunto & mac**
+## Compile seele node
+- **ubuntu & mac**
 ```
-wget xxxx
-tar -zxvf xxxxx.tar.gz
-cp xxxx/bin/node /usr/bin/
+cd go-seele
+Make all
+cp build/node /usr/bin/
 ```
 - **windows**
 ```
-set SEELE_PATH=xxxxx
+cd go-seele
+buildall.bat
 set PATH=%PATH%;%SEELE_PATH%/build
 ```
 
-## Configuration
-
+## Configure seele node
 **Download Test Network Configuration**:
 ```
 git clone https://github.com/webbergao1/TNet
 ```
-**Modify node configuration file**: `config/nodeConfig.json`
+**Modify configuration file**: `config/nodeConfig.json`
 
 | Configuration Items | Description |
 | ----------- | --------- |
@@ -37,7 +43,43 @@ git clone https://github.com/webbergao1/TNet
 | RPCAddr | JSON-RPC port, default `55027` |
 | NetworkID | Network ID, filled: `2` |
 
-**Modify monitor-api configuration file**: `config/nodeConfig.json` (details: https://github.com/seeleteam/monitor-api)
+
+## Start seele node
+- **ubuntu & mac**
+```
+node start -c ./config/nodeConfig.json
+```
+- **windows**
+```
+node.exe start -c ./config/nodeConfig.json
+```
+
+## build moniotor-api
+**Download and compile**
+```
+git clone https://github.com/seeleteam/monitor-api.git
+cd monitor-api
+go build
+```
+
+**Set environment variables**
+
+- **ubuntu & mac**
+            
+```
+cp build/monitor-api /usr/bin/
+```
+
+- **windows**
+
+```
+set PATH=%PATH%;%SEELE_PATH%/build
+```
+
+
+## Configure the moniotor-api
+
+Modify the configuration file: `config/app.conf` (details: https://github.com/seeleteam/monitor-api)
 
 
 | Configuration Items | Description |
@@ -45,15 +87,19 @@ git clone https://github.com/webbergao1/TNet
 | App_name | node name, displayed on the monitor monitor page |
 | RPCURL | This node's RPC link address, the port to fill in the `RPCAddr` listener address in `nodeConfig.json`, default 55027
 
-## Start 
+
+
+## Start moniotor-api
+
 - **ubuntu & mac**
+
 ```
-node start -c nodeConfig.json
 monitor-api
 ```
+
 - **windows**
+
 ```
-node.exe start -c nodeConfig.json
 monitor-api.exe
 ```
 
