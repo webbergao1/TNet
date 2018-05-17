@@ -4,11 +4,11 @@ Git clone https://github.com/seeleteam/go-seele
 ```
 
 ## Environment
-- **ubunto & mac**
+- **ubunto & mac**  
 *Compile*:go development environment  
 *Network*: Standalone IP address  
 *Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively  
-- **windows**
+- **windows**  
 *Compile*: Go development environment, gcc tool (http://tdm-gcc.tdragon.net/download)  
 *Network*: Standalone IP address  
 *Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively  
