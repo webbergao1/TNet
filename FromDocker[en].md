@@ -13,9 +13,9 @@ Modify `docker-compose/node_config/nodeconfig.json` in this project
 | Configuration Items | Description |
 | ----------- | --------- |
 | Name | Node Name |
-StaticNodes | Static Node Address, please fill out the test node we provided<s>**`XXX`**</s> |
-| RPCAddr | Port default `55027`, monitor service use | 
-| NetworkID | Network ID, fill in **`1`** |
+StaticNodes | Static Node Address, please fill out the test node address we provided<s>**`XXX`**</s> |
+| RPCAddr | Port default `55027`, monitor service used | 
+| NetworkID | Network ID, fill in **`2`** |
 
 ### Configure the monitor-api image
 Modify `docker-compose/monitor-api-config/app1.conf` in this project
@@ -26,9 +26,9 @@ Modify `docker-compose/monitor-api-config/app1.conf` in this project
 | RPCURL | Fill in the IP address of the connecting node, the default port is 55027 <br> Modify the port that is mapped in docker-compose |
 
 ### Configure Docker-compose
-Modify the project's `docker-compose/docker-compose.yml`
+Modify `docker-compose/docker-compose.yml` in this project
 
-We start the go-seele and monitor-api mirrors by default
+We start the go-seele and monitor-api images by default
 
 ##### go-seele image:
 
@@ -36,7 +36,7 @@ We start the go-seele and monitor-api mirrors by default
 | ----------- | --------- |
 Volumes | Mount the local `docker-compose/node_config` folder to the image /go-seele/config folder |
 | command | Start the node `node start -c /go-seele/config/nodeconfig.json`. |
-| ports | <rpc port>: 55027 Use the `RPCURL` for app1.conf <br> <http port>:65027 <br> <p2p port >:39007|
+| ports | < rpc port >: 55027 Use the `RPCURL` for app1.conf <br> < http port >:65027 <br> < p2p port >:39007|
 ##### monitor-api image:
 
 | Configuration Items | Description |
