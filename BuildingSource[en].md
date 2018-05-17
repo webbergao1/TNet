@@ -1,12 +1,10 @@
-@@ -1 +1,105 @@
-## Building the source
 # Download source code and compile
 ```
 Git clone https://github.com/seeleteam/go-seele
 ```
 
 ## Environment
-- **ubunto & mac**  
+- **ubuntu & mac**  
 *Compile*: go development environment  
 *Network*: Standalone IP address  
 *Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively  

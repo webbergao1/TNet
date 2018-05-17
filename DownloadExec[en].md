@@ -1,7 +1,7 @@
 # Download executable file
 
 ## Environment
-- **ubunto & mac**  
+- **ubuntu & mac**  
 *Network*: Standalone IP address  
 *Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively  
 - **windows**  
@@ -10,7 +10,7 @@
 *Firewall*: Open ports 39007, 55027 for p2p connections and rpc services respectively  
 
 ## Download（TODO）
-- **ubunto & mac**
+- **ubuntu & mac**
 ```
 wget xxxx
 tar -zxvf xxxxx.tar.gz
@@ -24,7 +24,7 @@ set PATH=%PATH%;%SEELE_PATH%/build
 
 ## Configuration
 
-**Download Test Network Configuration**:
+**Download test network configuration**:
 ```
 git clone https://github.com/webbergao1/TNet
 ```
