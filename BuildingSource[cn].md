@@ -9,7 +9,7 @@ git clone https://github.com/seeleteam/go-seele
 *网络*： 独立IP地址  
 *防火墙*：  开放39007、55027端口，分别用于p2p连接和rpc服务
 - **windows**  
-*编译*：go开发环境,    gcc工具（http://tdm-gcc.tdragon.net/download）  
+*编译*：go开发环境,    gcc工具（http://tdm-gcc.tdragon.net/download ）  
 *网络*： 独立IP地址  
 *防火墙*： 开放39007、55027端口，分别用于p2p连接和rpc服务
 
@@ -77,7 +77,7 @@ set PATH=%PATH%;%SEELE_PATH%/build
 
 ## 配置 moniotor-api
 
-修改配置文件：`config/app.conf` （详细见： https://github.com/seeleteam/monitor-api）
+修改配置文件：`config/app.conf` （详细见： https://github.com/seeleteam/monitor-api ）
 
 
 | 配置项 | 说明 |

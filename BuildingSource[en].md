@@ -1,6 +1,6 @@
 # Download source code and compile
 ```
-Git clone https://github.com/seeleteam/go-seele
+git clone https://github.com/seeleteam/go-seele
 ```
 
 ## Environment
@@ -17,7 +17,7 @@ Git clone https://github.com/seeleteam/go-seele
 - **ubuntu & mac**
 ```
 cd go-seele
-Make all
+make all
 cp build/node /usr/bin/
 ```
 - **windows**
@@ -77,7 +77,7 @@ set PATH=%PATH%;%SEELE_PATH%/build
 
 ## Configure the moniotor-api
 
-Modify the configuration file: `config/app.conf` (details: https://github.com/seeleteam/monitor-api)
+Modify the configuration file: `config/app.conf` (details: https://github.com/seeleteam/monitor-api )
 
 
 | Configuration Items | Description |
