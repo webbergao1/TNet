@@ -34,14 +34,14 @@ We start the go-seele and monitor-api images by default
 
 | Configuration Items | Description |
 | ----------- | --------- |
-Volumes | Mount the local `docker-compose/node_config` folder to the image /go-seele/config folder |
+Volumes | Volume the host folder `docker-compose/node_config` to the local folder in the image `/go-seele/config` |
 | command | Start the node `node start -c /go-seele/config/nodeconfig.json`. |
 | ports | < rpc port >: 55027 Used by the configuration item `RPCURL` in app1.conf <br> < http port >:65027 <br> < p2p port >:39007|
 ##### monitor-api image:
 
 | Configuration Items | Description |
 | ----------- | --------- |
-Volumes | Mount the local `docker-compose/monitor-api-config/app1.conf` file to the mirrored /monitor-api/app.conf file |
+Volumes | Volume the host file `docker-compose/monitor-api-config/app1.conf` to the local file in the image `/monitor-api/app.conf` |
 
 ### Start Docker Image
 
