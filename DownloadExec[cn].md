@@ -22,7 +22,7 @@ set PATH=%PATH%;%SEELE_PATH%/build
 ```
 git clone https://github.com/webbergao1/TNet
 ```
-**配置 seele节点**：`config/nodeConfig.json`（详细见： https://github.com/seeleteam/go-seele）
+**配置 seele节点**：`config/nodeConfig.json`（详细见： https://github.com/seeleteam/go-seele ）
 
 | 配置项 | 说明 |
 | ----------- | --------- |
@@ -31,7 +31,7 @@ git clone https://github.com/webbergao1/TNet
 |  RPCAddr  | JSON-RPC端口，默认`55027` |
 |  NetworkID  | 网络ID，填写测试网ID: `2`  |
 
-**配置 monitor-api节点**：`config/app.conf` （详细见： https://github.com/seeleteam/monitor-api）
+**配置 monitor-api节点**：`config/app.conf` （详细见： https://github.com/seeleteam/monitor-api ）
 
 | 配置项 | 说明 |
 | ----------- | --------- |

@@ -9,7 +9,7 @@
 	防火墙: 开放39007、55027端口，分别用于p2p连接和rpc服务
 
 ### 配置go-seele镜像
-修改本工程里的 `docker-compose/node_config/nodeconfig.json`
+修改本工程里的 `docker-compose/node_config/nodeconfig.json` （详细见： https://github.com/seeleteam/go-seele ）
 
 | 配置项 | 说明 |
 | ----------- | --------- |
@@ -19,7 +19,7 @@
 |  NetworkID  | 网络ID，填写 **`1`**  |
 
 ### 配置monitor-api镜像
-修改本工程里的 `docker-compose/monitor-api-config/app1.conf`
+修改本工程里的 `docker-compose/monitor-api-config/app1.conf` （详细见： https://github.com/seeleteam/monitor-api ）
 
 | 配置项 | 说明 |
 | ----------- | --------- |

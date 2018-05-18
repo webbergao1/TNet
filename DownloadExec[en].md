@@ -27,7 +27,7 @@ set PATH=%PATH%;%SEELE_PATH%/build
 ```
 git clone https://github.com/webbergao1/TNet
 ```
-**Modify node configuration file**: `config/nodeConfig.json`
+**Modify node configuration file**: `config/nodeConfig.json` ( details https://github.com/seeleteam/go-seele ）
 
 | Configuration Items | Description |
 | ----------- | --------- |
@@ -36,7 +36,7 @@ git clone https://github.com/webbergao1/TNet
 | RPCAddr | JSON-RPC port, default `55027` |
 | NetworkID | Network ID, filled: `2` |
 
-**Modify monitor-api configuration file**: `config/nodeConfig.json` (details: https://github.com/seeleteam/monitor-api)
+**Modify monitor-api configuration file**: `config/app.conf` (details: https://github.com/seeleteam/monitor-api )
 
 
 | Configuration Items | Description |

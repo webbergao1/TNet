@@ -8,7 +8,7 @@ We provide go-seele image and monitor-api image, and the docker-compose.yml file
 - Install Docker compose  
 - Firewall: Open port 39007 and 55027 for p2p connection and rpc service respectively  
 ### Configure the go-seele image
-Modify `docker-compose/node_config/nodeconfig.json` in this project
+Modify `docker-compose/node_config/nodeconfig.json` in this project, ( details https://github.com/seeleteam/go-seele ）
 
 | Configuration Items | Description |
 | ----------- | --------- |
@@ -18,7 +18,7 @@ StaticNodes | Static Node Address, please fill out the test node address we prov
 | NetworkID | Network ID, fill in **`2`** |
 
 ### Configure the monitor-api image
-Modify `docker-compose/monitor-api-config/app1.conf` in this project
+Modify `docker-compose/monitor-api-config/app1.conf` in this project, ( details: https://github.com/seeleteam/monitor-api )
 
 | Configuration Items | Description |
 | ----------- | --------- |
