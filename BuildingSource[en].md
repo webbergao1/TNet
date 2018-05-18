@@ -32,7 +32,7 @@ set PATH=%PATH%;%SEELE_PATH%/build
 ```
 git clone https://github.com/webbergao1/TNet
 ```
-**Modify configuration file**: `config/nodeConfig.json`
+**Modify configuration file**: `config/nodeConfig.json` ( details https://github.com/seeleteam/go-seele ）
 
 | Configuration Items | Description |
 | ----------- | --------- |
